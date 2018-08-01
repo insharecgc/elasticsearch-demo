@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: org.elasticsearch.client:transport:6.3.2">
+    <CLASSES>
+      <root url="jar://D:/GradleRepository/caches/modules-2/files-2.1/org.elasticsearch.client/transport/6.3.2/a49d87c2f5e0cdc1beae9a135539251569b3d518/transport-6.3.2.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://D:/GradleRepository/caches/modules-2/files-2.1/org.elasticsearch.client/transport/6.3.2/d613ca6d4264144f7b4a1618c00201d2f372eb37/transport-6.3.2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

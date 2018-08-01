@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <bytecodeTargetLevel>
+      <module name="elastic_main" target="1.8" />
+      <module name="elastic_test" target="1.8" />
+      <module name="elasticsearch-demo_main" target="1.8" />
+      <module name="elasticsearch-demo_test" target="1.8" />
+      <module name="thymeleaf-action_main" target="1.8" />
+      <module name="thymeleaf-action_test" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

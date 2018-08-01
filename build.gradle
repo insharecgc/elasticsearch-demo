@@ -1,0 +1,61 @@
+buildscript {
+	ext {
+		springBootVersion = '2.0.3.RELEASE'
+	}
+
+	repositories {
+		//mavenCentral()
+		maven {
+			url 'http://maven.aliyun.com/nexus/content/groups/public/'
+		}
+	}
+	dependencies {
+		classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
+	}
+}
+
+apply plugin: 'java'
+apply plugin: 'org.springframework.boot'
+apply plugin: 'io.spring.dependency-management'
+
+group = 'com.inshare.demo'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = 1.8
+
+repositories {
+	//mavenCentral()
+    maven {
+        url 'http://maven.aliyun.com/nexus/content/groups/public/'
+    }
+}
+
+
+dependencies {
+	compile('org.springframework.boot:spring-boot-starter-web')
+
+//    compile('org.springframework.boot:spring-boot-starter-thymeleaf')
+
+	// https://mvnrepository.com/artifact/org.elasticsearch/elasticsearch
+	compile('org.elasticsearch:elasticsearch:6.3.2')
+
+	// https://mvnrepository.com/artifact/org.elasticsearch.client/transport
+	compile('org.elasticsearch.client:transport:6.3.2')
+
+	// https://mvnrepository.com/artifact/org.elasticsearch.plugin/transport-netty4-client
+	compile('org.elasticsearch.plugin:transport-netty4-client:6.3.2')
+
+
+	// https://mvnrepository.com/artifact/org.apache.commons/commons-lang3
+	compile('org.apache.commons:commons-lang3:3.7')
+
+	// https://mvnrepository.com/artifact/com.alibaba/fastjson
+	compile('com.alibaba:fastjson:1.2.47')
+
+	// // 添加 Spring Data JPA 的依赖
+	// compile('org.springframework.boot:spring-boot-starter-data-jpa')
+
+	// // 添加 MySQL连接驱动 的依赖
+	// compile('mysql:mysql-connector-java:6.0.5')
+
+	testCompile('org.springframework.boot:spring-boot-starter-test')
+}
